@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+}
+h2,h1,h3{
+    color: white;
+}
+/* otro */
+.container__loading{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+}
+.container__loading img{
+    height: 200px;
+    width: auto;
+}
+

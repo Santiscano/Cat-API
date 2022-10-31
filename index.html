@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <h1 class="text-center text-3xl font-bold text-white">Michis App</h1>
+
+    <span id="error"></span>
+
+    <section id="randomMichis">
+      <h2 class="text-center mb-32 text-xl font-normal text-white">Michis aleatorios</h2>
+      <!-- inicio -->
+      
+      <!-- final -->
+
+      <div class="container__loading ">
+        
+        <div class="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <article class="flex flex-col items-center pb-10 px-6 pt-8">
+            <img id="img1" class="mb-3 w-24 h-24 rounded-full shadow-lg" alt="Foto gatito aleatorio">
+            <button id="btn1" class="flex mt-4 space-x-3 md:mt-6" >
+              <a href="" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Guardar gatito en mis favoritos
+              </a>
+            </button>
+          </article>
+        </div>
+
+        <div class="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <article class="flex flex-col items-center pb-10 px-6 pt-8">
+            <img id="img2" class="mb-3 w-24 h-24 rounded-full shadow-lg" alt="Foto gatito aleatorio">
+            <button id="btn2" class="flex mt-4 space-x-3 md:mt-6" >
+              <a href="" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Guardar gatito en mis favoritos
+              </a>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <button id="recargar" class="text-center text-white">Recargar</button>
+    
+    <section id="uploadingMichi">
+      <h1 class="text-center text-3xl font-bold text-white">Sube la foto de tu gatito</h1>
+      <h2>Sube la foto de tu michi</h2>
+
+      <form id="uploadingForm">
+        <input id="file" type="file" name="file" />
+        <button type="button" onclick="uploadMichiPhoto()">Subit foto de michi</button>
+      </form>
+    </section>
+  
+    <h1 class="text-center text-3xl font-bold text-white">Mis Gatos Favoritos</h1>
+    <section id="favoriteMichis" class="container__loading">
+      <!-- <article>
+        <img id="img1" width="150" alt="Foto gatito aleatorio">
+        <button>Sacar al michi de favoritos</button>
+      </article> -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
